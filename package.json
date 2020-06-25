@@ -1,0 +1,30 @@
+{
+  "name": "draw-space",
+  "version": "1.0.0",
+  "description": "Drawing Web App",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hochberg/draw-space.git"
+  },
+  "author": "Alex Hochberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hochberg/draw-space/issues"
+  },
+  "homepage": "https://github.com/hochberg/draw-space#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
