@@ -10,16 +10,18 @@
     "start": "node server.js",
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
+  "author": "Alex Hochberg",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hochberg/draw-space.git"
   },
-  "author": "Alex Hochberg",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/hochberg/draw-space/issues"
   },
   "homepage": "https://github.com/hochberg/draw-space#readme",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4"
