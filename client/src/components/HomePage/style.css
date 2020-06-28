@@ -1,0 +1,27 @@
+.wrapper {
+    height: 100%;
+    color: white;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link {
+    color: white;
+}
+
+
+h1 {
+    font-size: 84px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 18px;
+}
